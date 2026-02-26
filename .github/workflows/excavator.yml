@@ -1,4 +1,4 @@
-name: Scoop バケット 更新
+name: Excavator
 on:
   workflow_dispatch:
   schedule:
@@ -6,9 +6,9 @@ on:
 
 jobs:
   excavate:
-    permissions: 
+    permissions:
       contents: write
-    name: Scoop バケット更新
+    name: Excavate
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@main
